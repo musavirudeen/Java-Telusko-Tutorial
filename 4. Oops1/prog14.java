@@ -14,6 +14,7 @@ public class prog14 {
         obj.num=8;
         System.out.println(obj.num);
         System.out.println(obj1.num);
+        System.out.println(data+" "+r1+" "+r2);
     }
     
 }
