@@ -1,3 +1,5 @@
+
+//-------------------------Method Overriding-------------------------------
 class B{
     public void show(){
         System.out.println("Show in B");
@@ -7,7 +9,7 @@ class B{
     }
 }
 class C extends B{
-    public void show(){
+    public void show(){             //overriding the method of super class
         System.out.println("Show in C");
     }
 }

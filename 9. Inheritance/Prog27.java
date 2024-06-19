@@ -1,3 +1,4 @@
+//-----------------------------Inheritence Concept--------------------------
 class Calc{
     public int add(int m, int n){
         return m+n;
@@ -19,6 +20,7 @@ class VeryAdvCalc extends AdvCalc{      //Multi Level Inheritance:
         return (int)Math.pow((double)m, (double)n);
     }
 }
+                         //java doesn't support Multiple Inheritance.
 public class Prog27 {
     public static void main(String[] args) {
         Calc ob1= new Calc();
