@@ -1,9 +1,8 @@
 package test;
 
 public class B{
-    public int num=9;
-    public void show(){
+    protected int num=9;
+    protected void show(){
         System.out.println("Show Method:");
     }
 }
-

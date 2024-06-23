@@ -5,6 +5,6 @@ public class Prog29 {
         B obj= new B();
         System.out.println(obj.num);
         obj.show();
-    }
-    
+    }   
 }
+//----------------Run In IDE---------
