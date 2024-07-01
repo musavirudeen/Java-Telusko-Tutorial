@@ -5,7 +5,9 @@ enum Status{
 }
 public class Prog39 {
     public static void main(String[] args) {
-        //System.out.println(e1.Success+ e1.Pending+ e1.Failed + e1.Responding);
+        Status e1 = Status.Pending;
+        System.out.println(e1);
+        //System.out.println(e1.Success +" "+ e1.Pending+ e1.Failed + e1.Responding);
         for (Status s: Status.values()){
             System.out.println(s + " : " + s.ordinal());
         }

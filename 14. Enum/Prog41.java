@@ -1,3 +1,8 @@
+/*
+ * Enum Constants with parametes....
+ */
+
+
 enum Bikes{
     SPLENDER(80000),PULSAR(180000),DUKE(250000),RE(270000);
     private int price;
