@@ -35,15 +35,18 @@ public class Prog53 {
         brand.add("Vivo");
 
         System.out.println(brand);
-        // boolean check=false;
-        // for(String b: brand){
-        //     if(b=="Apple"){
-        //         check=true;
-        //     }
-        // }
-        // if(check){
-        //     System.out.println("There Apple is a Brand.");
-        // }
+        // Collections.sort(brand);
+        boolean check=false;
+        String dummy="";
+        for(String b: brand){
+            if(b=="Oppo"){
+                check=true;
+                dummy=b;
+            }
+        }
+        if(check){
+            System.out.println("There "+dummy+ " is a Brand.");
+        }
         brand.remove("IQOO");
         for(String b:brand){
             System.out.println(b);
