@@ -1,43 +1,50 @@
-/*
- * --------synchronized Keyword-------------
- *      It is used for prevent data lose when we use same method via 
- * two threads. if method is declared with the keyword of synchronized
- * then it only accessed after one thread to another.
+/*Thread Priority and Sleep:
+        It helps to get priority to the threads.
+ * 
  */
-class Counting{
-    int num=0;
-    public synchronized void increment(){
-        num++;
+
+class Loop extends Thread {
+    public void run(){
+        for(int i=0;i<100;i++){
+            System.out.println("Hi");
+            try{
+                sleep(10);
+            }
+            catch(Exception e){
+                e.printStackTrace();
+            }
+        }
     }
 }
-public class Prog50 {
-    public static void main(String[] args) throws InterruptedException {
- 
-        Counting c = new Counting();
- 
-        Runnable ob1= () ->
-        { 
-            for(int i=0;i<100000;i++){ 
-                c.increment();
+class Loop2 extends Thread {
+    public void run(){
+        for(int i=0;i<100;i++){
+            System.out.println("Hello");
+            try{
+                sleep(10);
             }
-        };
-
-        Runnable ob2=() ->
-        {
-            for(int j=0;j<100000;j++){
-                c.increment();
+            catch(Exception e){
+                e.printStackTrace();
             }
-        };
+        }
+    }
+}
+public class Prog50{
+    public static void main(String[] args) {
+        Loop o1=new Loop();
+        Loop2 o2 = new Loop2();
 
-        Thread t1=new Thread(ob1);
-        Thread t2=new Thread(ob2);
-
-        t1.start();
-        t2.start();    
+        o1.setPriority(Thread.MAX_PRIORITY);
+        System.out.println(o2.getPriority());
+        System.out.println(o1.getPriority());
         
-        t1.join();
-        t2.join();
-
-        System.out.println(c.num);
-    }    
+        o1.start();
+        try{
+            o1.sleep(10);
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+        o2.start();         
+   }
 }
