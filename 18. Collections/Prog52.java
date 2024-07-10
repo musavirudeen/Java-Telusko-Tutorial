@@ -1,3 +1,8 @@
+/*Collection API -> concept
+* Collection -> Interface
+* Collections -> classe with multiple methods different type of data structures
+*/
+
 /*List:
  * ArrayList and LinkedList:
  * usually LinkedList is faster than ArrayList. and more precicable when we use sort method.
