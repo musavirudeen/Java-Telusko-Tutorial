@@ -1,4 +1,8 @@
-//Comparator vs Comparable:
+/* Comparator vs Comparable:
+ *      Comparable is an interface, which take input as class which we implements it. and it has predefined method
+ * which is named as compareTo of int return type.if Collection.sort(subclass of Comparable) is calling compareTo method of subclass.
+ *      Comparator is also an interface which is predefined with the compare method of int return type.
+ */
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -19,7 +23,7 @@ class Student implements Comparable<Student>{
         return "Student [age=" + age + ", name=" + name + "]";
     }
     public int compareTo(Student that){
-        return this.age<that.age?1:-1;
+        return this.age>that.age?1:-1;
     }
 }
 

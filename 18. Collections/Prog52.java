@@ -1,10 +1,13 @@
+/*Collection API -> concept
+* Collection -> Interface
+* Collections -> classe with multiple methods different type of data structures
+*/
+
 /*List:
  * ArrayList and LinkedList:
  * usually LinkedList is faster than ArrayList. and more precicable when we use sort method.
  */
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class Prog52 {
     public static void main(String[] args) {

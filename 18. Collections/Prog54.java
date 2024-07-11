@@ -12,8 +12,8 @@ import java.util.TreeMap;
 
 public class Prog54 {
     public static void main(String[] args) {
-        // Map<Integer,String> employers=new HashMap<>();
-        Map<Integer,String> employers=new TreeMap<>();
+        Map<Integer,String> employers=new HashMap<>();
+        // Map<Integer,String> employers=new TreeMap<>();
         employers.put(1001, "Dheen");
         employers.put(1005, "Jailani");
         employers.put(1003, "Yusuf");
@@ -21,6 +21,7 @@ public class Prog54 {
         employers.put(1004, "Abdul");
         System.out.println(employers);
         System.out.println(employers.keySet());
+        employers.replace(1005, "Jailani", "Ragul");
         for (int k : employers.keySet()) { 
             System.out.println(employers.get(k));
         }

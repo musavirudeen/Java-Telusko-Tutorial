@@ -6,11 +6,7 @@
  *      TreeSet ->  It is stors data, with sorted type.
  */
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.LinkedHashSet;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class Prog53 {
     public static void main(String[] args) {
@@ -35,7 +31,7 @@ public class Prog53 {
         brand.add("Vivo");
 
         System.out.println(brand);
-        // Collections.sort(brand);
+        // Collections.sort(brand);     --> It give you an error, because list type is the input of sort method.
         boolean check=false;
         String dummy="";
         for(String b: brand){
